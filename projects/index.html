@@ -2,7 +2,7 @@
 <html lang="en" class="silk-light">
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>::About Neotica</title>
+  <title>::Projects - Neotica.id</title>
   <meta content="Neotica.id - A mobile development research platform." name="description">
   <link href="/favicon.ico" rel="icon">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -19,7 +19,7 @@
       <div class="kobweb-box kobweb-align-top-start" style="width: 100%; height: 100%; padding: 0px 2rem;">
        <div class="kobweb-row kobweb-arrange-space-between kobweb-align-center-vert" style="padding: 1rem 0px; width: 100%;">
         <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="flex-grow: 1; min-width: 0px; padding: 0px 1rem 0px 0px;">
-         <a class="silk-link" href="/"><img class="silk-image" style="padding: 0px 0.5rem 0px 0px; height: 2rem; display: block;" src="/neotica-logo.png" alt="Kobweb Logo"></a><span class="silk-span-text" style="overflow-wrap: break-word; color: rgb(240, 248, 255); font-size: 1.5em; font-style: italic; font-weight: bold;">Neotica.id/about-lol</span>
+         <a class="silk-link" href="/"><img class="silk-image" style="padding: 0px 0.5rem 0px 0px; height: 2rem; display: block;" src="/neotica-logo.png" alt="Kobweb Logo"></a><span class="silk-span-text" style="overflow-wrap: break-word; color: rgb(240, 248, 255); font-size: 1.5em; font-style: italic; font-weight: bold;">Neotica.id/projects</span>
         </div>
         <div class="silk-display-if-at-least-md kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="gap: 1.5rem;">
          <a class="silk-link silk-link-undecorated silk-link-uncolored" href="/">Home</a><a class="silk-link silk-link-undecorated silk-link-uncolored" href="/about">About</a><a class="silk-link silk-link-undecorated silk-link-uncolored" href="/contact">Contact</a>
@@ -36,64 +36,36 @@
       </div>
       <div class="page-content">
        <div class="kobweb-col kobweb-arrange-top kobweb-align-start" style="background-color: rgb(20, 0, 71); width: 100%; height: 100%; padding: 0px 2rem; overflow: auto;">
-        <div class="markdown markdown_light">
-         <h1 id="haha-about-this-template">HAHA About this template</h1>
-         <p>This template is intended to both demonstrate some fundamentals of the Kobweb framework and act a starting point you can build your own site from.</p>
-         <hr class="silk-horizontal-divider">
-         <h2 id="learn">Learn</h2>
-         <p>If this is your first time using Kobweb, please open this site's project in an IDE and take a few minutes to look around the code.</p>
-         <h3 id="files">Files</h3>
-         <h4 id="appentry-kt">AppEntry.kt</h4>
-         <p>This file declares a method that is an entry point for all pages on your site. You can rename the file and the method if you like. Kobweb searches for a single method at compile time annotated with <code>@App</code>.</p>
-         <h4 id="appstyles-kt">AppStyles.kt</h4>
-         <p>An example of declaring generally useful styles that can be used anywhere across the whole site. Otherwise, you normally declare styles close to the widget that uses them.</p>
-         <h4 id="sitetheme-kt">SiteTheme.kt</h4>
-         <p>An example of how to define some site-specific colors, effectively extending the palette provided by Silk.</p>
-         <h4 id="components">components/</h4>
-         <p>By convention, Kobweb codebases organize reusable site components under this folder. Within it, you have:</p>
-         <ul>
-          <li><code>layouts/</code><br>
-            Represents top-level organization for pages</li>
-          <li><code>sections/</code><br>
-            Areas of content that appear across multiple pages (such as nav bars and footers)</li>
-          <li><code>widgets/</code><br>
-            Home for low-level UI pieces that you can use around your site</li>
-         </ul>
-         <h4 id="pages">pages/</h4>
-         <p>Any <code>@Composable</code> under this folder additionally tagged with <code>@Page</code> will have a route generated for it automatically. Defining a page outside of this folder will be flagged as an error by the Kobweb Gradle plugin at compile time. Note that additional pages (like this one!) might live under the <code>resources/markdown</code> folder.</p>
-         <h4 id="resources">resources/</h4>
-         <ul>
-          <li><code>public</code><br>
-            If you want to host any media on your site (such as an icon, an image, text configuration files, movies, fonts, etc.), you should put it under this folder.</li>
-          <li><code>markdown</code><br>
-            Any markdown discovered in here by Kobweb at compile time will be converted into pages on your site.</li>
-         </ul>
-         <h3 id="classes">Classes</h3>
-         <p>The Kobweb and Silk APIs introduce a lot of powerful concepts. Here are some of the most important ones to know about which you can find used throughout this template.</p>
-         <h4 id="modifier">Modifier</h4>
-         <p>Kobweb introduces the <code>Modifier</code> keyword that Android developers will recognize from the Jetpack Compose API. In a webdev context, this is used for setting CSS styles and html attributes on elements in the page.</p>
-         <h4 id="cssstyle">CssStyle</h4>
-         <p>Traditional HTML pages use CSS to style their UI. In Kobweb, these styles can be declared using the <code>CssStyle</code> class in a Kotlin-idiomatic way. You can find examples of style blocks used throughout the template.</p>
-         <h4 id="keyframes">Keyframes</h4>
-         <p>You can create animations by declaring keyframes for them, using <code>Keyframes</code> blocks to define them (similar to declaring <code>CssStyle</code> style blocks). Once defined, call <code>Modifier.animation(YourKeyframes.toAnimation(...))</code> to reference them.</p>
-         <h2 id="starting-point">Starting Point</h2>
-         <p>This template aims to create some generally useful pieces that most sites will want to use. Making your own site could be as easy as deleting this <em>About</em> page and working from there. However, you are welcome to modify or delete anything you find in the template that you don't plan to use in your final site.</p>
-         <p>If instead you'd like to start from scratch, you can run</p>
-         <pre><code>$ kobweb create app/empty
-</code></pre>
-         <p>which will create a new project with nothing inside of it except for a minimal, skeletal structure.</p>
-         <h2 id="export-and-deploy">Export and Deploy</h2>
-         <p>When you are ready to share your site with the world, you'll want to export it first. This will create a production snapshot of your site.</p>
-         <p>There are two flavors of Kobweb sites: <em>static layout</em> and <em>full stack</em>. You can <a class="silk-link" href="https://kobweb.varabyte.com/docs/concepts/foundation/exporting#static-layout-vs-full-stack-sites">read more about these choices here</a>.</p>
-         <p>For most sites, a static layout site is what you want, so to do that, return to the command line and run:</p>
-         <pre><code>$ kobweb export --layout static
-</code></pre>
-         <p>After that runs for a little while, your production site should be generated! You can find the files under the <code>.kobweb/site</code> folder.</p>
-         <p>Test it locally by running:</p>
-         <pre><code>$ kobweb run --layout static --env prod
-</code></pre>
-         <p>If you're satisfied, you can upload your site files to the static website host provider of your choice. Each provider has its own instructions for how it discovers your files, so please refer to their documentation.</p>
-         <p>You can <a class="silk-link" href="https://bitspittle.dev/blog/2022/staticdeploy">read this blog post</a> for some concrete examples of exporting a Kobweb site to two popular static website hosting providers.</p>
+        <div class="kobweb-row kobweb-arrange-start kobweb-align-center-vert" style="font-size: 1.5rem; gap: 1rem;">
+         <span class="silk-span-text" style="font-size: 2rem;">Projects</span>
+        </div>
+        <div class="silk-display-if-at-least-md kobweb-row kobweb-arrange-spaced-by kobweb-arrange-start kobweb-align-top" style="--kobweb-arrange-spaced-by: 1rem;">
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="border-radius: 20%; background-color: rgba(93, 110, 224, 0.2); width: 16rem; height: 100%; padding: 2rem; flex-direction: column;">
+          <img class="silk-image" style="border-radius: 20%;" src="/projects/neoverse-logo.png" alt="" width="180"><span class="silk-span-text">Neoverse</span><span class="silk-span-text" style="font-size: 0.8rem; font-style: italic;">An RPG inspired social media.</span><a class="silk-link" href="https://play.google.com/store/apps/details?id=id.neotica.neoverse"><span class="silk-span-text">Play store</span></a>
+         </div>
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="border-radius: 20%; background-color: rgba(93, 110, 224, 0.2); padding: 2rem; width: 16rem;">
+          <img class="silk-image" style="border-radius: 20%;" src="/projects/alexandria-logo.png" alt="" width="180"><span class="silk-span-text">Alexandria</span><span class="silk-span-text" style="font-size: 0.8rem; font-style: italic;">A vast community-driven reading and writing platform.</span><a class="silk-link" href="https://alexandria.neotica.id"><span class="silk-span-text">Website</span></a>
+         </div>
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="border-radius: 20%; background-color: rgba(93, 110, 224, 0.2); padding: 2rem; width: 16rem;">
+          <img class="silk-image" style="border-radius: 20%;" src="/projects/compose-multiplatform-logo.svg" alt="" width="180"><span class="silk-span-text">Droidcore</span><span class="silk-span-text" style="font-size: 0.8rem; font-style: italic;">A Compose Multiplatform library.</span>
+          <div class="kobweb-row kobweb-arrange-spaced-by kobweb-arrange-start kobweb-align-center-vert" style="--kobweb-arrange-spaced-by: 0.8rem;">
+           <a class="silk-link" href="https://github.com/laetuz/Droidcore"><span class="silk-span-text">Github</span></a><a class="silk-link" href="https://mvnrepository.com/artifact/id.neotica/droidcore"><span class="silk-span-text">Maven</span></a>
+          </div>
+         </div>
+        </div>
+        <div class="silk-display-until-md kobweb-col kobweb-arrange-spaced-by kobweb-arrange-start kobweb-align-center-horiz" style="width: 100%; --kobweb-arrange-spaced-by: 1rem;">
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="border-radius: 20%; background-color: rgba(93, 110, 224, 0.2); width: 16rem; height: 100%; padding: 2rem; flex-direction: column;">
+          <img class="silk-image" style="border-radius: 20%;" src="/projects/neoverse-logo.png" alt="" width="180"><span class="silk-span-text">Neoverse</span><span class="silk-span-text" style="font-size: 0.8rem; font-style: italic;">An RPG inspired social media.</span><a class="silk-link" href="https://play.google.com/store/apps/details?id=id.neotica.neoverse"><span class="silk-span-text">Play store</span></a>
+         </div>
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="border-radius: 20%; background-color: rgba(93, 110, 224, 0.2); padding: 2rem; width: 16rem;">
+          <img class="silk-image" style="border-radius: 20%;" src="/projects/alexandria-logo.png" alt="" width="180"><span class="silk-span-text">Alexandria</span><span class="silk-span-text" style="font-size: 0.8rem; font-style: italic;">A vast community-driven reading and writing platform.</span><a class="silk-link" href="https://alexandria.neotica.id"><span class="silk-span-text">Website</span></a>
+         </div>
+         <div class="kobweb-col kobweb-arrange-top kobweb-align-center-horiz" style="border-radius: 20%; background-color: rgba(93, 110, 224, 0.2); padding: 2rem; width: 16rem;">
+          <img class="silk-image" style="border-radius: 20%;" src="/projects/compose-multiplatform-logo.svg" alt="" width="180"><span class="silk-span-text">Droidcore</span><span class="silk-span-text" style="font-size: 0.8rem; font-style: italic;">A Compose Multiplatform library.</span>
+          <div class="kobweb-row kobweb-arrange-spaced-by kobweb-arrange-start kobweb-align-center-vert" style="--kobweb-arrange-spaced-by: 0.8rem;">
+           <a class="silk-link" href="https://github.com/laetuz/Droidcore"><span class="silk-span-text">Github</span></a><a class="silk-link" href="https://mvnrepository.com/artifact/id.neotica/droidcore"><span class="silk-span-text">Maven</span></a>
+          </div>
+         </div>
         </div>
        </div>
       </div>
